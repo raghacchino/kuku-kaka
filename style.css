@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Kaka-font';
+    src: url(./assets/KakaFont-Regular.otf) format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kaka-font', serif;
+}
+
+body {
+    background: url("./assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 240px;
+    /* display: flex; */
+    /* align-items: center; */
+    height: 100%;
+    /* margin: 0 auto; */
+}
