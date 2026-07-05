@@ -16,6 +16,7 @@ body {
     background-position: center;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -193,6 +194,11 @@ body {
 
 /**************************************** TEST ****************************************/
 
+h2 {
+    font-size: 68px;
+    margin-bottom: 20px;
+}
+
 .test-container {
     display: flex;
     gap: 20px;
@@ -205,6 +211,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
     width: 50%;
+    position: relative;
 }
 
 .text-area label {
@@ -245,4 +252,38 @@ body {
     outline: none;
     /* border-color: #007bff; */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.textarea-btns {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.textarea-btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 12px;
+    /* position: relative; */
+    /* text-align: center; */
+    transition: all 0.2s ease;
+}
+
+.textarea-btns button:hover {
+    border-color: #1d1d1d;
+    background-color: #111;
+    color: #fff;
 }

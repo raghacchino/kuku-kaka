@@ -9,10 +9,16 @@
 </head>
 
 <body>
+    <h2>Try It!</h2>
+
     <div class="test-container">
         <div class="text-area">
             <label for="arial-text">Your Text in Arial font</label>
             <textarea class="arial-text" placeholder="Enter your text..."></textarea>
+            <div class="textarea-btns">
+                <button class="clear">Clear</button>
+                <button class="translate">Translate</button>
+            </div>
         </div>
 
         <div class="text-area">
@@ -43,20 +49,24 @@
     <script>
         const navBtn = document.querySelector(".nav-btn")
         const offScreenMenu = document.querySelector(".off-screen-menu")
-        const inputText = document.querySelector(".arial-text");
-        const outputText = document.querySelector(".kaka-text");
+        const arialText = document.querySelector(".arial-text")
+        const kakaText = document.querySelector(".kaka-text")
+        const clearBtn = document.querySelector(".clear")
+        const translateBtn = document.querySelector(".translate")
 
         navBtn.addEventListener("click", () => {
             navBtn.classList.toggle("nav-open")
             offScreenMenu.classList.toggle("menu-open")
         })
 
+        translateBtn.addEventListener("click", () => {
+            kakaText.value = arialText.value
+        })
 
-        inputText.addEventListener("keydown", (e) => {
-            if (e.key === 'Enter') {
-                outputText.value = inputText.value;
-            }
-        });
+        clearBtn.addEventListener("click", () => {
+            arialText.value = ""
+            kakaText.value = arialText.value
+        })
     </script>
 </body>
 
