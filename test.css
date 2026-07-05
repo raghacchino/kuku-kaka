@@ -19,7 +19,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    /* overflow: hidden; */
 }
 
 /*************************************** MENU ***************************************/
@@ -192,59 +191,58 @@ body {
     transition-delay: 0.2s;
 }
 
-/**************************************** GUIDE ****************************************/
+/**************************************** TEST ****************************************/
 
-.guide-table {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    width: 60%;
-    height: 60dvh;
-    /* background-color: #433443; */
-    /* border: 2px #000 solid; */
-    overflow-y: auto;
-    /* padding: 12px; */
-}
-
-.guide-table::-webkit-scrollbar-track {
-    border: 4px solid white;
-    background-color: #b2bec3;
-    border-radius: 8px;
-}
-
-.guide-table::-webkit-scrollbar {
-    width: 10px;
-    /* width: 12px; */
-    border-radius: 8px;
-    background-color: #dfe6e9;
-}
-
-.guide-table::-webkit-scrollbar-thumb {
-    background-color: #000;
-    border-radius: 10px;
-}
-
-.row {
+.test-container {
     display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
-    width: 100%;
-    font-size: 22px;
+    gap: 20px;
+    width: 1000px;
+    /* margin: 0 auto; */
 }
 
-.row .ariel-font {
+.text-area {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.text-area label {
+    /* color: #333; */
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-area label[for="kaka-text"] {
+    font-size: 24px;
+}
+
+.text-area .kaka-text,
+.kaka-text::placeholder {
+    /* background-color: red; */
+    font-size: 19px;
+}
+
+.arial-text,
+.text-area label[for="arial-text"] {
     font-family: Arial, sans-serif;
 }
 
-.row .ariel-font,
-.row .kaka-font {
-    /* font-size: 20px; */
-    width: 40%;
-    display: flex;
-    justify-content: center;
+.text-area textarea {
+    /* width: 100%; */
+    height: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    font-size: 16px;
+    /* background-color: #fff; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.row .arrow {
-    font-family: "Poppins", serif;
+.text-area textarea:focus {
+    outline: none;
+    /* border-color: #007bff; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

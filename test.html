@@ -4,12 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuku Kaka | Home</title>
-    <link rel="stylesheet" href="./home.css">
+    <title>Kuku Kaka | Test</title>
+    <link rel="stylesheet" href="./test.css">
 </head>
 
 <body>
-    <h1>Kuku <br> Kaka</h1>
+    <div class="test-container">
+        <div class="text-area">
+            <label for="arial-text">Your Text in Arial font</label>
+            <textarea class="arial-text" placeholder="Enter your text..."></textarea>
+        </div>
+
+        <div class="text-area">
+            <label for="kaka-text">The Text in Kaka font</label>
+            <textarea class="kaka-text" placeholder="Your text in Kaka font..." readonly></textarea>
+        </div>
+    </div>
 
     <div class="off-screen-menu">
         <ul>
@@ -33,12 +43,20 @@
     <script>
         const navBtn = document.querySelector(".nav-btn")
         const offScreenMenu = document.querySelector(".off-screen-menu")
+        const inputText = document.querySelector(".arial-text");
+        const outputText = document.querySelector(".kaka-text");
 
         navBtn.addEventListener("click", () => {
             navBtn.classList.toggle("nav-open")
             offScreenMenu.classList.toggle("menu-open")
-            // console.log("hello")
         })
+
+
+        inputText.addEventListener("keydown", (e) => {
+            if (e.key === 'Enter') {
+                outputText.value = inputText.value;
+            }
+        });
     </script>
 </body>
 
