@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuku Kaka</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./home.css">
 </head>
 
 <body>
@@ -14,12 +14,12 @@
     <div class="off-screen-menu">
         <ul>
             <li><a href="index.html" data-text="Home">Home</a></li>
-            <li><a href="#" data-text="Giude">Guide</a></li>
+            <li><a href="guide.html" data-text="Giude">Guide</a></li>
             <li><a href="#" data-text="Test">Test</a></li>
             <li><a href="#" data-text="Download">Download</a></li>
         </ul>
     </div>
-    <div class="nav">
+    <div class="nav-btn">
         <div class="nav-icon">
             <span></span>
             <span></span>
@@ -31,12 +31,13 @@
     </div>
 
     <script>
-        const nav = document.querySelector(".nav")
+        const navBtn = document.querySelector(".nav-btn")
         const offScreenMenu = document.querySelector(".off-screen-menu")
 
-        nav.addEventListener("click", () => {
-            nav.classList.toggle("nav-open")
+        navBtn.addEventListener("click", () => {
+            navBtn.classList.toggle("nav-open")
             offScreenMenu.classList.toggle("menu-open")
+            // console.log("hello")
         })
     </script>
 </body>
