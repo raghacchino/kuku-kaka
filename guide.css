@@ -16,6 +16,7 @@ body {
     background-position: center;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -194,6 +195,11 @@ body {
 
 /**************************************** GUIDE ****************************************/
 
+h2 {
+    font-size: 56px;
+    margin-bottom: 12px;
+}
+
 .guide-table {
     /* display: flex;
     flex-direction: column;
@@ -225,19 +231,29 @@ body {
     border-radius: 10px;
 }
 
+.row:nth-child(1) .kaka-font,
+.row:nth-child(1) .arial-font {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .row {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
     width: 100%;
+}
+
+.row .arial-font {
+    font-family: Arial, sans-serif;
     font-size: 22px;
 }
 
-.row .ariel-font {
-    font-family: Arial, sans-serif;
+.row .kaka-font {
+    font-size: 26px;
 }
 
-.row .ariel-font,
+.row .arial-font,
 .row .kaka-font {
     /* font-size: 20px; */
     width: 40%;
