@@ -199,3 +199,30 @@ h1 {
     height: 100%;
     /* margin: 0 auto; */
 }
+
+.yellow {
+    /* color: #ffc107; */
+    /* color: #ffeb62; */
+    color: #ffc954;
+}
+
+.blue {
+    /* color: #a5d4ff; */
+    color: #99caff;
+}
+
+.green {
+    color: #86d957;
+}
+
+.red {
+    /* color: #f36363; */
+    color: #ff5053;
+}
+
+.pink {
+    /* color: #f36393; */
+    /* color: #ff317d; */
+    color: #ff95ae;
+    /* color: #ff8fba; */
+}
