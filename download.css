@@ -176,14 +176,38 @@ body {
     text-transform: uppercase;
     /* z-index: 1; */
     font-size: 24px;
-    color: #e2e2e2;
-    text-shadow: 0 0 10px #e2e2e2,
-        0 0 30px #e2e2e2,
-        0 0 80px #e2e2e2;
     /* font-weight: 500; */
     letter-spacing: 100px;
     opacity: 0;
     transition: all 0.4s linear;
+}
+
+.off-screen-menu ul li .home-menu::before {
+    color: #ff95ae;
+    text-shadow: 0 0 10px #ff95ae,
+        0 0 30px #ff95ae,
+        0 0 80px #ff95ae;
+}
+
+.off-screen-menu ul li .guide-menu::before {
+    color: #86d957;
+    text-shadow: 0 0 10px #86d957,
+        0 0 30px #86d957,
+        0 0 80px #86d957;
+}
+
+.off-screen-menu ul li .test-menu::before {
+    color: #99caff;
+    text-shadow: 0 0 10px #99caff,
+        0 0 30px #99caff,
+        0 0 80px #99caff;
+}
+
+.off-screen-menu ul li .download-menu::before {
+    color: #ffc954;
+    text-shadow: 0 0 10px #ffc954,
+        0 0 30px #ffc954,
+        0 0 80px #ffc954;
 }
 
 .off-screen-menu ul li a:hover::before {
@@ -278,4 +302,24 @@ h2 {
     border-color: #1d1d1d;
     background-color: #111;
     color: #fff;
+}
+
+.yellow {
+    color: #ffc954;
+}
+
+.blue {
+    color: #99caff;
+}
+
+.green {
+    color: #86d957;
+}
+
+.red {
+    color: #ff5053;
+}
+
+.pink {
+    color: #ff95ae;
 }
