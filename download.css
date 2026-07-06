@@ -236,7 +236,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background: linear-gradient(120deg, #ffc954, #86d957);
     color: #111;
     border: 1px solid #dbdbdb;
     border-radius: 8px;
@@ -250,8 +250,8 @@ h2 {
 }
 
 .download-btn:hover {
-    border-color: #1d1d1d;
-    background-color: #111;
+    /* border-color: #1d1d1d; */
+    background: #111;
     color: #fff;
 }
 
@@ -262,7 +262,7 @@ h2 {
     justify-content: center;
     width: 60%;
     gap: 12px;
-    background-color: #111;
+    background: linear-gradient(120deg, #ff95ae, #99caff);
     color: #fff;
     padding: 20px;
     border-radius: 16px;
@@ -284,8 +284,8 @@ h2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-    color: #111;
+    background: #111;
+    color: #fff;
     border: 1px solid #dbdbdb;
     border-radius: 8px;
     box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.5);
@@ -299,9 +299,9 @@ h2 {
 }
 
 .contact-me p a:hover {
-    border-color: #1d1d1d;
-    background-color: #111;
-    color: #fff;
+    /* border-color: #1d1d1d; */
+    background: linear-gradient(120deg, #ffc954, #86d957);
+    color: #111;
 }
 
 .yellow {
