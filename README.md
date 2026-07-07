@@ -4,13 +4,13 @@ the word kaka means baby in hindi and since babies say "gugu gaga", i wanted to 
 Home
 ![Home page](./assets/home.png)
 Guide
-![Guide page](./assets/guide.png.png)
+![Guide page](./assets/guide.png)
 Test
-![Test page](./assets/test.pngpng.png)
+![Test page](./assets/test.png)
 Download
-![Download page](./assets/download.pnghome.png)
+![Download page](./assets/download.png)
 Hamburger menu
-![Hamburger menu](./assets/menu.pnghome.png)
+![Hamburger menu](./assets/menu.png)
 
 ## Features
 - hamburger menu with stylish hover effect
